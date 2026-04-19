@@ -8,8 +8,25 @@
 
 using namespace std;
 
-// Token
+//testing array functions
+int main() {
+    ArrayStack<int> s;
 
+    s.push(1);
+    s.push(2);
+    s.push(3);
+
+    cout << s.top() << endl; //should be 3
+    s.pop();
+    cout << s.top() << endl; //should be 2
+    cout << s.top() << endl; //should be 2
+    cout << s.empty() << endl; //should be 0
+
+    return 0;
+}
+
+// Token
+/*
 struct Token {
     string value;   // number, operator, or parenthesis
 };
@@ -90,3 +107,4 @@ int main() {
 
     return 0;
 }
+*/
