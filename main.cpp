@@ -1,32 +1,15 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <unordered_map>
 #include <cctype>
+#include <unordered_map>
 
 #include "ArrayStack.h"
 
 using namespace std;
 
-//testing array functions
-int main() {
-    ArrayStack<int> s;
-
-    s.push(1);
-    s.push(2);
-    s.push(3);
-
-    cout << s.top() << endl; //should be 3
-    s.pop();
-    cout << s.top() << endl; //should be 2
-    cout << s.top() << endl; //should be 2
-    cout << s.empty() << endl; //should be 0
-
-    return 0;
-}
-
 // Token
-/*
+
 struct Token {
     string value;   // number, operator, or parenthesis
 };
@@ -36,6 +19,32 @@ struct Token {
 vector<Token> tokenize(const string& line) {
     vector<Token> tokens;
     // TODO
+    string currentNum = "";
+    for (int i = 0; i < line.length(); i++) {
+        char c = line[i];
+        if (isdigit(c)) {
+            currentNum += c;
+        }
+        else {
+            if (!currentNum.empty()) {
+                tokens.push_back(Token(currentNum));
+                currentNum = "";
+            }
+            if (isspace(c)) {
+                continue;
+            }
+            if (c == '+' || c == '-' || c == '*' || c == '/' || c == '(' || c == ')') {
+                string tokenValue = "";
+                tokenValue += c;
+                tokens.push_back({tokenValue});
+            }
+            else {
+                string tokenValue = "";
+                tokenValue += c;
+                tokens.push_back({tokenValue});
+            }
+        }
+    }
     return tokens;
 }
 
@@ -107,4 +116,3 @@ int main() {
 
     return 0;
 }
-*/

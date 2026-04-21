@@ -1,99 +1,60 @@
 # Developer Log (DEVLOG.md)
-## Monopoly Board Simulator (Spring 2026)
 
 Minimum **6 entries** required.
 
-Each entry must document learning and reasoning. Fabricated bugs are not expected.
-
----
-
-## Allowed Entry Types
-Each entry may be one of the following:
-
-1) **Bug Fix Entry**
-- The issue encountered.
-- Error messages or symptoms.
-- Attempts made.
-- Final resolution.
-
-2) **Edge Case / Testing Entry**
-- A failure discovered through testing.
-- The specific input/state that caused it.
-- The change you made to handle it correctly.
-
-3) **Engineering Decision Entry (up to 2 allowed)**
-- A design decision you made.
-- An alternative approach you considered.
-- Why you chose one approach over another (tradeoffs).
-
----
-
 ### Entry 1
-**Date:** YYYY-MM-DD  
-**Entry Type:** Bug Fix / Edge Case / Engineering Decision  
-**Task worked on:**  
-**Issue or decision:**  
-**Error message / symptom (if applicable):**  
-**What I tried:**  
-**Fix / resolution (or final decision):**  
-**Commit(s):**  
+**Date:** 2026-04-20
+**What I worked on:** I worked on implementing the functions of push, pop, top, size, and empty.
+**Bugs or issues I encountered:**  I did not encounter any bugs or issues.
+**How I tested the code:**  I created a temporary code in main.cpp that created a basic stack and checked if the functions gave the correct value when ran. 
+**What I fixed or improved:** I did not have to fix or improve anything at this point
+**Commit(s):** 1 and 2
 
 ---
 
 ### Entry 2
-**Date:** YYYY-MM-DD  
-**Entry Type:** Bug Fix / Edge Case / Engineering Decision  
-**Task worked on:**  
-**Issue or decision:**  
-**Error message / symptom (if applicable):**  
-**What I tried:**  
-**Fix / resolution (or final decision):**  
-**Commit(s):**  
+**Date:** 2026-04-21  
+**What I worked on:** I made the tokenizer function that breaks the string into tokens
+**Bugs or issues I encountered:**  I had problems with numbers that were more than single digits.
+**How I tested the code:**  I tested using basic inputs like 3 + 4 * 2
+**What I fixed or improved:** I made sure the tokenizer uses full numbers and separates the operators and parentheses
+**Commit(s):**  3
 
 ---
 
 ### Entry 3
 **Date:** YYYY-MM-DD  
-**Entry Type:** Bug Fix / Edge Case / Engineering Decision  
-**Task worked on:**  
-**Issue or decision:**  
-**Error message / symptom (if applicable):**  
-**What I tried:**  
-**Fix / resolution (or final decision):**  
-**Commit(s):**  
+**What I worked on:**
+**Bugs or issues I encountered:**  
+**How I tested the code:**  
+**What I fixed or improved:**
+**Commit(s):**
 
 ---
 
 ### Entry 4
 **Date:** YYYY-MM-DD  
-**Entry Type:** Bug Fix / Edge Case / Engineering Decision  
-**Task worked on:**  
-**Issue or decision:**  
-**Error message / symptom (if applicable):**  
-**What I tried:**  
-**Fix / resolution (or final decision):**  
-**Commit(s):**  
+**What I worked on:**
+**Bugs or issues I encountered:**  
+**How I tested the code:**  
+**What I fixed or improved:**
+**Commit(s):**
 
 ---
 
 ### Entry 5
-**Date:** YYYY-MM-DD  
-**Entry Type:** Bug Fix / Edge Case / Engineering Decision  
-**Task worked on:**  
-**Issue or decision:**  
-**Error message / symptom (if applicable):**  
-**What I tried:**  
-**Fix / resolution (or final decision):**  
-**Commit(s):**  
+**What I worked on:**
+**Bugs or issues I encountered:**  
+**How I tested the code:**  
+**What I fixed or improved:**
+**Commit(s):**
 
 ---
 
 ### Entry 6
 **Date:** YYYY-MM-DD  
-**Entry Type:** Bug Fix / Edge Case / Engineering Decision  
-**Task worked on:**  
-**Issue or decision:**  
-**Error message / symptom (if applicable):**  
-**What I tried:**  
-**Fix / resolution (or final decision):**  
-**Commit(s):**  
+**What I worked on:**
+**Bugs or issues I encountered:**  
+**How I tested the code:**  
+**What I fixed or improved:**
+**Commit(s):**   
