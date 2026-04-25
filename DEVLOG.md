@@ -23,12 +23,12 @@ Minimum **6 entries** required.
 ---
 
 ### Entry 3
-**Date:** YYYY-MM-DD  
-**What I worked on:**
-**Bugs or issues I encountered:**  
-**How I tested the code:**  
-**What I fixed or improved:**
-**Commit(s):**
+**Date:** 2026-04-26  
+**What I worked on:** I made the precedence, postfix validation and evaluation functions
+**Bugs or issues I encountered:**   I had to make sure the lefts and rights were working properly, specifically for the subtraction and division.
+**How I tested the code:**  I used test inputs to make sure the validation and evalution functions returned the right thing.
+**What I fixed or improved:** I did not have to fix or improve thi section of the code
+**Commit(s):** 4, 5, and 6
 
 ---
 
