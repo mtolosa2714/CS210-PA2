@@ -33,12 +33,12 @@ Minimum **6 entries** required.
 ---
 
 ### Entry 4
-**Date:** YYYY-MM-DD  
-**What I worked on:**
-**Bugs or issues I encountered:**  
-**How I tested the code:**  
-**What I fixed or improved:**
-**Commit(s):**
+**Date:** 2026-04-27
+**What I worked on:** I made the infix validation function
+**Bugs or issues I encountered:**  I figured out how to track if the program was going to get a number, parenthesis, or operator
+**How I tested the code:**  I used test inputs again, first valid ones and then invalid ones
+**What I fixed or improved:** I added more logic to check the order and made sure the parentheses are balanced
+**Commit(s):** 7
 
 ---
 

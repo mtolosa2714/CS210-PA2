@@ -93,7 +93,47 @@ bool isValidPostfix(const vector<Token>& tokens) {
 
 bool isValidInfix(const vector<Token>& tokens) {
     // TODO
-    return false;
+    if (tokens.empty()) {
+        return false;
+    }
+    ArrayStack<string> parenthesis;
+    bool numOrLeftParenthesis = true;
+    for (int i = 0; i < tokens.size(); i++) {
+        string value = tokens[i].value;
+        if (isdigit(value[0])) {
+            if (!numOrLeftParenthesis) {
+                return false;
+            }
+            numOrLeftParenthesis = false;
+        }
+        else if (value == "(") {
+            if (!numOrLeftParenthesis) {
+                return false;
+            }
+            parenthesis.push(value);
+            numOrLeftParenthesis = true;
+        }
+        else if (value == ")") {
+            if (numOrLeftParenthesis) {
+                return false;
+            }
+            if (parenthesis.empty()) {
+                return false;
+            }
+            parenthesis.pop();
+            numOrLeftParenthesis = false;
+        }
+        else if (isOperator(value)) {
+            if (numOrLeftParenthesis) {
+                return false;
+            }
+            numOrLeftParenthesis = true;
+        }
+        else {
+            return false;
+        }
+    }
+    return !numOrLeftParenthesis && parenthesis.empty();
 }
 
 // Conversion
