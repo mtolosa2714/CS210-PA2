@@ -43,11 +43,12 @@ Minimum **6 entries** required.
 ---
 
 ### Entry 5
-**What I worked on:**
-**Bugs or issues I encountered:**  
-**How I tested the code:**  
-**What I fixed or improved:**
-**Commit(s):**
+**Date:** 2026-04-29
+**What I worked on:** I worked on converting infix expressions into postfix format
+**Bugs or issues I encountered:**  I had trouble making sure the operators were coming out in the right order based on precedence
+**How I tested the code:**  I tested with inputs to make sure the postfix output matched what it should be
+**What I fixed or improved:** I adjusted how operators were popped from the stack so higher or equal precedence ones came out first
+**Commit(s):** 8
 
 ---
 
