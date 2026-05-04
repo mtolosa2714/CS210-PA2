@@ -54,8 +54,8 @@ Minimum **6 entries** required.
 
 ### Entry 6
 **Date:** 2026-05-01
-**What I worked on:** I connected everything together in main and fixed the tokenizer and infix conversion so the program works 
+**What I worked on:** I connected everything together in main and fixed the tokenizer and infix conversion so the program works, checked all the code, ran test inputs and edgecases
 **Bugs or issues I encountered:** I had an issue where the last number in the input was not being added to the tokens and also accidentally put "(" into the output instead of the stack in infixToPostfix
 **How I tested the code:**  I tested different inputs like postfix expressions, infix expressions, and invalid ones to make sure it printed the correct format and result
 **What I fixed or improved:** I fixed the tokenizer to always include the last number and corrected how parentheses are handled so the postfix output is correct
-**Commit(s):** 9
+**Commit(s):** 9 and 10
